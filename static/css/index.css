@@ -1,0 +1,44 @@
+body{
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, address, strong, em, b, i {
+    font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* BEGIN PROFILE CONTENT */
+
+div.profile{
+	background: #EFEFEF;
+}
+
+div.profile-content{
+	margin: 20px;
+	width: 190px;
+}
+
+div.profile-image{
+	background: #888888;
+	height: 240px;
+	width: 100%;
+}
+
+div.profile-info{
+	margin-top: 20px;
+}
+
+
+div.profile-info .subtitle{
+	font-weight: bold;
+}
+
+/* END OF PROFILE CONTENT */
