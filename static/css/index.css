@@ -26,7 +26,7 @@ p{
 }
 
 a{
-	color: #0087E2;
+	color: #2FAAFF;
 	text-decoration: none;
 }
 
@@ -133,7 +133,7 @@ img.title-content{
 
 /* BEGIN OF PORTAFOLIO */
 	div.portafolio-content{
-		margin-top: 10px;
+		margin: 10px 0px 20px 0px;
 	}
 
 	div.work-preview{
@@ -145,3 +145,20 @@ img.title-content{
 		width: 410px;
 	}
 /* END OF MY PORTAFOLIO */
+
+/* BEGIN OF NETWORKING */
+	ul.publications{
+		margin: 10px 0px 0px 0px;
+	}
+
+	ul.publications li span.title{
+		color: #333333;
+		font-size: 16px;
+		font-style: italic;
+	}
+
+	ul.publications li span.date{
+		color: #2FAAFF;
+		font-size: 12px;
+	}
+/* END OF MY NETWORKING */

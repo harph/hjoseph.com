@@ -1,0 +1,11 @@
+<img src="/static/images/twitter-title.png" border="0" alt="HJOSEPH Blog Posts Title" class="title-content">
+<ul class="publications">
+	{% for tweet in tweets %}
+		<li>
+			<p>
+				{{ tweet.text }}<br>
+				<span class="date">{{ tweet.date}}</span>
+			</p>
+		</li>
+	{% endfor %}
+</ul>

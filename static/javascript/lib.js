@@ -1,5 +1,8 @@
 $(document).ready(function(){
         
+		$('#twitter-area').load('/tweets');
+		$('#blog-area').load('/posts');
+
 		$('div.navbar > ul.menu > li > a').click(function(){
 			return slideScroll($(this.hash));
 		})
