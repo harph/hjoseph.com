@@ -61,12 +61,17 @@ img.title-content{
 /* END OF HEADER */
 
 /* BEGIN OF ABOUT */
+	div.about-content{
+		float: left;
+		margin-left: 10px;
+	}
 	/* BEGIN OF PROFILE */
 		div.profile{
 			background: #EFEFEF;
 		}
 
 		div.profile-content{
+			float: left;
 			margin: 20px;
 			width: 190px;
 		}
@@ -79,6 +84,7 @@ img.title-content{
 		}
 
 		div.profile-info{
+			float: left;
 			margin-top: 20px;
 		}
 
@@ -95,3 +101,14 @@ img.title-content{
 		}
 	/* END OF PROFILE */
 /* END OF ABOUT */
+
+/* BEGIN OF MY TOOL BOX */
+	ul.toolbox{
+		text-align: center;
+	}
+	
+	ul.toolbox li{
+		display: inline;
+		margin: 10px;
+	}
+/* END OF MY TOOL BOX */
