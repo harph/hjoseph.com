@@ -1,11 +1,20 @@
 <img src="/static/images/twitter-title.png" border="0" alt="HJOSEPH Blog Posts Title" class="title-content">
-<ul class="publications">
-	{% for tweet in tweets %}
-		<li>
-			<p>
-				{{ tweet.text }}<br>
-				<span class="date">{{ tweet.date}}</span>
-			</p>
-		</li>
-	{% endfor %}
-</ul>
+{% if tweets %}
+	<ul class="publications">
+		{% for tweet in tweets %}
+			<li>
+				<p>
+					{{ tweet.text }}<br>
+					<span class="date">{{ tweet.date}}</span>
+				</p>
+			</li>	
+		{% endfor %}
+	</ul>
+{% else %}
+	<div class="warning">
+		<img src="/static/images/warning.png" alt="HJOSEPH Warning Image"/>
+		<div class="warning-message">
+			Sorry! right now I'm unavailable to load my tweets.
+		</div>
+	</div>
+{% endif %}

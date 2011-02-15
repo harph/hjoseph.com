@@ -1,12 +1,21 @@
 <img src="/static/images/blog-title.png" border="0" alt="HJOSEPH Blog Posts Title" class="title-content">
-<ul class="publications">
-	{% for post in posts %}
-		<li>
-			<p>
-				<span class="title">{{ post.regularTitle }}<br></span>
-				{{ post.regularBody|safe|striptags|truncatewords:40 }}<br>
-				<span class="date">{{ post.date }}<br></span>
-			</p>
-		</li>
-	{% endfor %}
-</ul>
+{% if posts %}
+	<ul class="publications">
+		{% for post in posts %}
+			<li>
+				<p>
+					<span class="title">{{ post.regularTitle }}<br></span>
+					{{ post.regularBody|safe|striptags|truncatewords:40 }}<br>
+					<span class="date">{{ post.date }}<br></span>
+				</p>
+			</li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<div class="warning">
+		<img src="/static/images/warning.png" alt="HJOSEPH Warning Image"/>
+		<div class="warning-message">
+			Sorry! right now I'm unavailable to load my posts.
+		</div>
+	</div>
+{% endif %}

@@ -42,6 +42,17 @@ img.title-content{
 	margin-bottom: 10px;
 }
 
+div.warning, div.warning-message{
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+div.warning-message{
+	color: #AEAEAE;
+	font-size: 12px;	
+}
+
 /* END OF COMMON STYLES */
 
 /* BEGIN OF HEADER */
