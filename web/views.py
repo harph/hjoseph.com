@@ -15,13 +15,12 @@ def get_tweets(request):
 		f = urlopen('http://api.twitter.com/1/statuses/user_timeline/harph.json')
 		timeline = f.read()
 		f.close()
-		# tweets = [dict(text = tweet['text'], date = self._parse_tweet_date(tweet['created_at'])) for tweet in simplejson.loads(timeline)[:5]] 
 		tweets = [dict(text = tweet["text"], date = _parse_tweet_date(tweet["created_at"])) for tweet in simplejson.loads(timeline)[:5]]
 	except Exception, e:
 		tweets = []
 		
 	template_values = {'tweets' : tweets}
-	return render_to_response("_twitter.html", template_values)
+	return render_to_response("twitter.html", template_values)
 
 
 def _parse_tweet_date(strDate):
@@ -49,9 +48,13 @@ def get_posts(request):
 		posts = []
 
 	template_values = {'posts' : posts}
-	return render_to_response("_blog.html", template_values)
+	return render_to_response("blog.html", template_values)
 
 def _parse_blog_date(strDate):
 	monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 	strDate = datetime.strptime(strDate[:-4], '%Y-%m-%d %H:%M:%S')
 	return monthName[strDate.month - 1] + ' ' + str(strDate.day) + ' ' + str(strDate.year) 
+	
+	
+def get_portafolio_project(request, project_name):
+	return render_to_response("portafolio_projects/%s.html" % project_name, {'project_name': project_name})
