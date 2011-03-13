@@ -226,7 +226,52 @@ div.warning-message{
 	div#getintouch-section{
 		background: #222222 url(/static/images/footer-top.jpg) repeat-x;
 		float: left;
+		padding-top: 20px;
 		min-height:300px;
 		width: 100%;
 	}
+	
+	div#getintouch-section div.subsection{
+		margin-bottom: 20px;
+	}
+	
+	div#getintouch-section *{
+		color: #CCCCCC;
+	}
+	
+	div#getintouch-section h2{
+		font-size: 16px;
+		margin: 5px 0px;
+		text-align: justify;
+	}
+	
+	div.footer-icon{
+		float: left;
+		margin-right: 10px;
+		width: 40px;
+	}
+	
+	div.footer-separator{
+		background: url(/static/images/footer-separator.png) repeat-x;
+		height: 6px;
+		margin: 10px auto;
+	}
+	
+	img#hello-email{
+		margin: 30px 8px;
+	}
+	
+	div#copy-right{
+		margin-bottom: 20px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	
+	div#footer-bottom{
+		background: url(/static/images/hive.png) repeat-x;
+		float: left; 
+		height: 200px;
+		width: 100%;
+	}
+
 /* END OF FOOTER*/
