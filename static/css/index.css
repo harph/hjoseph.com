@@ -216,6 +216,10 @@ div.warning-message{
 		font-style: italic;
 	}
 
+	ul.publications li a{
+		color: #222222;
+	}
+
 	ul.publications li span.date{
 		color: #2FAAFF;
 		font-size: 12px;

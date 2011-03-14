@@ -37,10 +37,12 @@ def get_posts(request):
 		json_posts =  simplejson.loads(blog_posts)['posts']
 		while len(posts) < 3:
 			if json_posts[post_index]["type"] == 'regular':
+				jpost = json_posts[post_index]
 				posts.append(dict(
-					regularTitle =  json_posts[post_index]['regular-title'],
-					regularBody =  json_posts[post_index]['regular-body'],
-					date =   _parse_blog_date(json_posts[post_index]['date-gmt'])
+					regularTitle =  jpost['regular-title'],
+					regularBody =  jpost['regular-body'],
+					date =   _parse_blog_date(jpost['date-gmt']),
+					url = jpost['url']
 				))
 			post_index += 1
 	except Exception, e:
