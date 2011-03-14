@@ -223,6 +223,7 @@ div.warning-message{
 	ul.publications li span.date{
 		color: #2FAAFF;
 		font-size: 12px;
+		font-style: italic;
 	}
 /* END OF MY NETWORKING */
 
