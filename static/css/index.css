@@ -87,6 +87,10 @@ div.warning-message{
 /* END OF HEADER */
 
 /* BEGIN OF ABOUT */
+	div#about-section{
+		margin-bottom: 20px;
+	}
+
 	div.about-content{
 		float: left;
 		margin-left: 10px;
