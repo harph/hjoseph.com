@@ -1,0 +1,27 @@
+$static_path: '/static/';
+
+$primary-color: #202529;
+$secondary-color: #34ACC5;
+
+$primary-border: 1px solid #333;
+
+.row {
+    &.full-width {
+        max-width: 100% !important;
+    }
+}
+
+.navbar {
+    $v_padding: 25px;
+    background-color: $primary-color;
+    border-bottom: $primary-border;
+    color: $secondary-color;
+    padding-top: $v_padding;
+    padding-bottom: $v_padding;
+}
+
+.hero {
+    background-color: $primary-color;
+    background-image: url('#{$static_path}img/grid.png');
+    height: 600px;
+}
