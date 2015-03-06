@@ -71,3 +71,7 @@ docs/_build/*
 MANIFEST
 builder/*
 env
+
+# SASS and CSS
+.sass-cache
+static/css/*
