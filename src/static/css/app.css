@@ -1,0 +1,16 @@
+.row.full-width {
+  max-width: 100% !important; }
+
+.navbar {
+  background-color: #202529;
+  border-bottom: 1px solid #333;
+  color: #34ACC5;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.hero {
+  background-color: #202529;
+  background-image: url("/static/img/grid.png");
+  height: 600px; }
+
+/*# sourceMappingURL=app.css.map */
