@@ -3,9 +3,14 @@
     <head>
         <title>Harrington Joseph - Software Engineer</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='lib/foundation/css/foundation.min.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
     </head>
     </body>
+        <div class="row full-width">
+            <div class="navbar small-12 columns">
+                menu
+            </div>
+        </div>
         {% block content %}
         {% endblock content %}
     </body>
